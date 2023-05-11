@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<title>FIGMA | Макеты для верстки — Верстка страницы</title>
 	<meta name="description" content="Макет для верстки сайта был взял с телеграм канала FIGMA | Макеты для верстки">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fonts/fonts.css">
 </head>
 <body>
 
@@ -25,8 +28,268 @@
     <!-- Конец -->
 
     <div class="main">
-        В данном блоке размещается верстка
-    </div>
+        
+        <section class="modules">
+            <div class="container">
+                <header class="header">
+                    <img src="./img/header-logo.svg" alt="logo" class="logo">
+                    <nav class="navbar">
+                        <a href="">о нас</a>
+                        <a href="">FilmToolzс</a>
+                        <a href="">DocToolz</a>
+                        <a href="">Услуги</a>
+                        <a href="">Контакты</a>
+                    </nav>
+                    <div class="language-toggle">
+                        <input id="check-toggle" class="check-toggle" type="checkbox">
+                        <label for="check-toggle"></label>
+                        <span class="on">RU</span>
+                        <span class="off">EN</span>
+                    </div>
+                </header>
+                <section class="intro">
+                    <div class="container">
+                        <div class="info">
+                            <h1 class="title">IT решения<br>для кино-бизнеса и не только</h1>
+                            <div class="description">
+                                <p class="text">
+                                    ООО “ТРЕНД-СОФТ” - созданная в 2014 году IT-компания, занимающаяся разработкой собственных сервисов для медиа-индустрии:
+                                </p>
+                                <p class="text">
+                                    FilmToolz.ru - автоматизация кинопроизводства и малого бизнеса (DocToolz.ru - автоматизация документооборота), а также осуществляющей разработку программного обеспечения под заказ.
+                                </p>
+                            </div>
+                        </div>
+                        <img src="./img/intro-img.png" alt="img">
+                    </div>
+                </section>
+                <div class="filmtoolz">
+                    <h2 class="title">
+                        <span>Filmtoolz.ru</span> - сервис автоматизации кинопроизводства
+                    </h2>
+                    <p class="text">
+                        Созданный в В 2015 году он стал незаменимым инструментом в каждодневной работе сотен российских кинокомпаний и в настоящее время является стандартом работы для всей отрасли.
+                    </p>
+                    <div class="actuals general">
+                        <div class="users">
+                            <img src="./img/actuals-users-img.svg" alt="img">
+                            <p class="number">20 000 +</p>
+                            <p class="type">Пользователей</p>
+                        </div>
+                        <div class="projects">
+                            <img src="./img/actuals-projects-img.svg" alt="img">
+                            <p class="number">10 000 +</p>
+                            <p class="type">Проектов</p>
+                        </div>
+                        <div class="years">
+                            <img src="./img/actuals-years-img.svg" alt="img">
+                            <p class="number">8 +</p>
+                            <p class="type">Лет на рынке</p>
+                        </div>
+                    </div>
+                </div>
+                <section class="module planning">
+                    <div class="container">
+                        <img src="./img/module-planning-img.png" alt="img" class="picture">
+                        <div class="info">
+                            <h3 class="heading">Модуль планирования</h3>
+                            <p class="text">
+                                FilmToolz позволяет систематизировать планирование съемок, автоматически формировать и настраивать всю необходимую в процессе съемок документацию, предоставляет широкий спектр производственных отчетов и дает возможность организовать командную работу над проектом в режиме онлайн.
+                            </p>
+                            <button class="button">
+                                <a href="#">подробнее</a>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+                <section class="module budget">
+                    <div class="container">
+                        <div class="info">
+                            <h3 class="heading">Модуль бюджетирования</h3>
+                            <p class="text">
+                                Модуль бюджетирования предназначен для работы над бюджетом проекта и последующего учета фактических затрат кинопроизводства. FilmToolz позволяет быстро сформировать смету по типовому шаблону или создать собственный.
+                            </p>
+                            <button class="button">
+                                <a href="#">подробнее</a>
+                            </button>
+                        </div>
+                        <img src="./img/module-budget-img.png" alt="img" class="picture">
+                    </div>
+                </section>
+                <section class="module preproduction">
+                    <div class="container">
+                        <img src="./img/module-preproduction-img.png" alt="img" class="picture">
+                        <div class="info">
+                            <h3 class="heading">Модуль препродакшн</h3>
+                            <p class="text">
+                                Крупнейшая в России кастинг-база (20 000+ актеров) и модуль препродакшн позволяют автоматизировать процессы
+                                подбора актеров на роли, хранения и систематизации видеопроб проекта, а также осуществлять подбор локаций и вести работу с версиями сценариев.
+                            </p>
+                            <button class="button">
+                                <a href="#">подробнее</a>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+                <section class="module casting-base">
+                    <div class="info">
+                        <h3 class="title casting-base">
+                            Кастинг-база
+                        </h3>
+                        <p class="text casting-base">
+                            Крупнейшая в России кастинг-база (20 000+ актеров) и модуль препродакшн позволяют автоматизировать процессы подбора актеров на роли, хранения и систематизации видеопроб проекта, а также осуществлять подбор локаций и вести работу с версиями сценариев.
+                        </p>
+                        <div class="actuals casting-base">
+                            <div class="actors">
+                                <p class="number">20 000 +</p>
+                                <p class="type">Актеров</p>
+                            </div>
+                            <div class="videos">
+                                <p class="number">30 000 +</p>
+                                <p class="type">Видео</p>
+                            </div> 
+                            <div class="photos">
+                                <p class="number">250 000 +</p>
+                                <p class="type">Фото</p>
+                            </div>
+                        </div>
+                        <button class="button">
+                            <a href="#">подробнее</a>
+                        </button>
+                    </div>
+                    <div class="wrapper">
+                        <img src="./img/module-casting-img.png" alt="img" class="casting-base">
+                    </div>
+                </section>
+                <h2 class="title doctoolz">
+                    Doctoolz.ru - облачное решение по организации документооборота 
+                </h2>
+                <section class="module docs">
+                    <div class="container">
+                        <img src="./img/module-docs-img.png" alt="img" class="picture">
+                        <div class="info">
+                            <h3 class="heading">Крупнейшая в России кастинг-база</h3>
+                            <p class="text">
+                                Крупнейшая в России кастинг-база (20 000+ актеров) и модуль препродакшн позволяют автоматизировать процессы подбора актеров на роли, хранения и систематизации видеопроб проекта, а также осуществлять подбор локаций и вести работу с версиями сценариев.
+                            </p>
+                            <button class="button">
+                                <a href="#">подробнее</a>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+                <div class="items">
+                    <div class="item">
+                        <img src="./img/item-icon-documents.png" alt="icon" class="icon">
+                        <p class="heading">документы</p>
+                        <p class="text">
+                            Настройка цепочек согласования договоров внутри компаний
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="./img/item-icon-approval.png" alt="icon" class="icon">
+                        <p class="heading">визирование</p>
+                        <p class="text">
+                            Контроль процессов визирования
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="./img/item-icon-store.png" alt="icon" class="icon">
+                        <p class="heading">хранение</p>
+                        <p class="text">
+                            Инструменты для хранения сканов
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="./img/item-icon-archive.png" alt="icon" class="icon">
+                        <p class="heading">онлайн-архив</p>
+                        <p class="text">
+                            Организация онлайн-архива документов
+                        </p>
+                    </div>
+                </div>
+                <section class="order">
+                    <div class="info">
+                        <h2 class="title">заказная разработка</h2>
+                        <p class="text">
+                            Трендсофт является разработчиком решений для SMART-TV (Samsung, LG и др) и предлагает комплексные продукты для запуска OTT- платформ.
+                        </p>
+                        <button class="button">
+                            <a href="#">оставить заявку</a>
+                        </button>
+                    </div>
+                    <div class="options">
+                        <div class="option">
+                            <div class="container__front smart-tv">
+                                <img src="./img/option-icon-smarttv.png" alt="icon" class="icon">
+                                <p class="heading">Разработки для SMART-TV</p>
+                            </div>
+                            <div class="container__back smart-tv">
+                                <p>
+                                    Разработка приложений для телевизоров Samsung и LG с функцией Smart TV, а также для устройств Android TV и Apple TV. Smart TV является молодой и развивающейся площадкой для пользовательских приложений в большей части для воспроизведения мультимедийного контента
+                                </p>
+                            </div>
+                        </div>
+                        <div class="option">
+                            <div class="container__front commerce">
+                                <img src="./img/option-icon-e-commenrce.png" alt="icon" class="icon">
+                                <p class="heading">Решения<br>для E-Commerce</p>
+                            </div>
+                            <div class="container__back commerce">
+                                <p>
+                                    Разработка мобильных приложений для смартфонов и планшетных компьютеров на базе платформ Android, IOS, Windows Mobile
+                                </p>
+                            </div>
+                        </div>
+                        <div class="option">
+                            <div class="container__front automation">
+                                <img src="./img/option-icon-automation.png" alt="icon" class="icon">
+                                <p class="heading">Автоматизация бизнес-процессов</p>
+                            </div>
+                            <div class="container__back automation">
+                                <p>
+                                    Разработка интернет-магазинов на базе современных технологий и новейших тенденций в дизайне 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="option">
+                            <div class="container__front mobile">
+                                <img src="./img/option-icon-mobile.png" alt="icon" class="icon">
+                                <p class="heading">Mobile разработка</p>
+                            </div>
+                            <div class="container__back mobile">
+                                <p>
+                                    Проектирование, разработка и внедрение систем автоматизации бизнесс-процессов. Индивидуальные проекты для любых отраслей, позволяющие управлять предприятием из любой точки мира
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="contacts">
+                    <div class="contact email">
+                        <div class="container">
+                            <p class="heading">Остались вопросы?</p>
+                            <span>Свяжитесь с нами:</span>
+                            <p class="email">order@trendsoft.ru</p>
+                        </div>
+                    </div>
+                    <div class="contact address">
+                        <div class="container">
+                            <p class="heading">Контакты</p>
+                            <span>+7 (499) 342-57-22</span>
+                            <p class="address">Москва, ул. Правды 24, стр. 2</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="legal">
+                    <p>
+                        ООО "ТРЕНД-СОФТ", ОГРНИП 3323523523, ИНН 234234234
+                        <br>Россия, Москва, ул. Правды, 24, стр 2
+                    </p>
+                </div>
+            </div>
+        </section>
 
+    </div>
 </body>
 </html>

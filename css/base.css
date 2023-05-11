@@ -32,7 +32,1093 @@ html{
 body{
     display: flex;
     flex-direction: column;
-    height: 100%;
+    width: 1920px;
+    height: 6317px;
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
+}
+
+/* Modules */
+.modules {
+    display: flex;
+    place-items: center;
+    background-image: url('../img/modules-bckg.png');
+    background-repeat: no-repeat;
+}
+.modules .container {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    width: 1218px;
+    margin: 0 378px;
+}
+
+/* Header */
+.header {
+    display: flex;
+    place-items: center;
+    width: 1218px;
+    height: 52px;
+    margin: 24px 0;
+}
+.header .logo {
+    width: 189.43px;
+    height: 36px;
+}
+.header .navbar {
+    display: flex;
+    justify-content: space-between;
+    gap: 46px;
+    width: 537px;
+    height: 18px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #000000;
+    margin: 0 164px 0 165px;
+}
+.header .navbar a {
+    transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.header .navbar a:hover {
+    color: #F83718;
+}
+.header .navbar a:active {
+    transform: scale(.9);
+}
+/* language toggle */
+.language-toggle {
+    position: relative;
+    display: inline-block;
+    place-items: center;
+    width: 104px;
+    height: 52px;
+    background: #F0F0F0;
+    border-radius: 12px;
+    margin: 0 5px;
+}
+.language-toggle > span {
+    position: absolute;
+    top: 18px;
+    width: 19px;
+    height: 16px;
+    pointer-events: none;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    width: 50%;
+    text-align: center;
+}
+input.check-toggle:checked ~ .off {
+    color: #F36F25;
+}
+input.check-toggle:checked ~ .on {
+    color: #666666;
+}
+.language-toggle > span.on {
+    left: 0;
+    padding-left: 2px;
+    color: #F83718;
+}
+.language-toggle > span.off {
+    right: 0;
+    padding-right: 8px;
+    color: #666666;
+}
+.check-toggle {
+    position: absolute;
+    margin-left: -9999px;
+    visibility: hidden;
+}
+.check-toggle + label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+}
+input.check-toggle + label {
+    padding: 4px;
+    width: 104px;
+    height: 52px;
+}
+input.check-toggle + label:before, input.check-toggle + label:after {
+    display: block;
+    position: absolute;
+    content: "";
+}
+input.check-toggle + label:before {
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    right: 2px;
+    background-color: #f0f0f0;
+    border-radius: 12px;
+}
+input.check-toggle + label:after {
+    width: 47px;
+    height: 44px;
+    background: #FFFFFF;
+    box-shadow: 1.38889px 1.38889px 5.55556px rgba(48, 48, 56, 0.12);
+    border-radius: 12px;
+    transition: margin 0.2s;
+}
+input.check-toggle:checked + label:after {
+    margin-left: 47px;
+}
+
+/* Intro */
+.intro {
+    display: flex;
+    width: 1218px;
+    height: 610px;
+    background-color: #F83718;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 100px;
+}
+.intro .container {
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    gap: 50px;
+    width: 1160px;
+    height: 442px;
+    margin: 85px 0px 81px 0px;
+}
+.intro .info {
+    display: flex;
+    flex-direction: column;
+}
+.intro .title {
+    width: 532px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+.intro .description {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 468px;
+}
+.intro .text {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+.intro img {
+    margin-top: 4px;
+    margin-left: 2px;
+}
+
+/* Filmtoolz */
+.filmtoolz {
+    display: flex;
+    flex-direction: column;
+    width: 765px;
+    height: 523px;
+    margin: 0 226.5px 58px;
+}
+.filmtoolz .title {
+    width: 538px;
+    height: 144px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000;
+    margin: 0 86px 30px;
+}
+.filmtoolz .title span {
+    color: #F83718;
+}
+.filmtoolz .text {
+    width: 580px;
+    height: 72px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%; /* 24px */
+    text-align: center;
+    color: #000000;
+    margin: 0 65px 70px;
+}
+/* actuals - general */
+.actuals.general {
+    display: flex;
+    justify-content: space-between;
+    width: 765px;
+    height: 207px;
+    margin: 0 -34px;
+}
+.actuals.general img {
+    width: 100px;
+    margin-bottom: 22px;
+}
+.actuals.general .projects img {
+    margin-bottom: 19px;
+}
+.actuals.general .users,
+.actuals.general .projects,
+.actuals.general .years {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    height: 206px;
+}
+.actuals.general .projects {
+    margin: 0 138px 0 124px;
+}
+.actuals.general .number {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 120%; /* identical to box height, or 48px */
+    text-align: center;
+    text-transform: uppercase;
+    color: #F83718;
+}
+.actuals.general .type {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 150%; /* identical to box height, or 39px */
+    text-align: center;
+    color: #000000;
+}
+
+/* Module */
+.module .container {
+    display: flex;
+    place-items: center;
+    gap: 60px;
+    /* height: 367px; */
+}
+.module img {
+    filter: drop-shadow(0px 2px 25px rgba(75, 77, 83, 0.25));
+    vertical-align: middle;
+}
+.module .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    width: 364px;
+}
+/* module - planning */
+.module.planning {
+    width: 1193px;
+    height: 495px;
+    background-image: url('../img/module-planning-bckg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 80px 22px 0;
+}
+.module.planning .container {
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    margin: 50px 104px 78px 115px;
+}
+.module.planning .info {
+    margin-top: 2px;
+}
+/* module - budget */
+.module.budget {
+    width: 1192px;
+    height: 495px;
+    background-image: url('../img/module-budget-bckg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: -25px;
+    margin-bottom: 22px;
+}
+.module.budget .container {
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    margin: 62px 0 92px 81px;
+}
+.module.budget .info {
+    width: 368px;
+    margin-top: 3px;
+}
+/* module - preproduction */
+.module.preproduction {
+    width: 1190px;
+    height: 490px;
+    background-image: url('../img/module-preproduction-bckg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 83px;
+    margin-bottom: 74px;
+}
+.module.preproduction .container {
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    margin: 47px 98px 72px 112px;
+}
+.module.preproduction .info {
+    width: 365px;
+    margin-left: -13px;
+}
+.module .heading {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: left;
+    text-transform: uppercase;
+    color: #000000;
+}
+.module .text {
+    width: 365px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 120%;
+    color: #1B1925;
+    text-align: left;
+}
+.module button {   
+    width: 148px;
+    height: 35px;
+    background: #F83718;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.module button:hover {
+    background: #EE816C;
+}
+.module button:active {
+    transform: scale(.9);
+}
+/* module - casting-base */
+.module.casting-base {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    width: 1218px;
+    margin-bottom: 22px;
+}
+.module.casting-base .info {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    width: 691px;
+    height: 349px;
+    margin: 0 237px;
+}
+.title.casting-base {
+    width: 265px;
+    height: 41px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.text.casting-base {
+    width: 551px;
+    height: 96px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #000000;
+    margin: 0 auto 30px;
+}
+/* actuals - casting-base */
+.actuals.casting-base {
+    display: flex;
+    justify-content: space-between;
+    width: 691px;
+    height: 87px;
+    margin-bottom: 30px;
+}
+.actuals.casting-base .actors,
+.actuals.casting-base .videos,
+.actuals.casting-base .photos {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+.actuals.casting-base .number {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #F83718;
+}
+.actuals.casting-base .type {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 150%;
+    text-align: center;
+    color: #000000;
+}
+.casting-base button {
+    margin: 0 auto;
+}
+/* module - casting-base - wrapper */
+.module.casting-base .wrapper {
+    display: flex;
+    place-items: center;
+    width: 1218px;
+    height: 614px;
+    background-image: url('../img/module-casting-base-bckg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: -1px;
+    margin-left: -26px;
+}
+.module.casting-base .wrapper img {
+    width: 1037px;
+    height: 481px;
+    margin: 66px 92px 67px 90px;
+}
+/* doctoolz */
+.title.doctoolz {
+    width: 628px;
+    height: 144px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000;
+    margin: 81px 345px 22px 289px;
+}
+/* module - docs */
+.module.docs {
+    background-image: url('../img/module-docs-bckg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1218px;
+    margin-right: 51px;
+}
+.module.docs .container {
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    gap: 45px;
+    margin: 74px 66px 72px 109px;
+}
+.module.docs .info {
+    width: 365px;
+    gap: 0;
+    /* margin-left: -16px; */
+}
+.module.docs .info .heading {
+    margin-bottom: 30px;
+}
+.module.docs .info .text {
+    width: 359px;
+    height: 133px;
+    margin-bottom: 30px;
+}
+
+/* Items */
+.items {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 1090px;
+    height: 229px;
+    margin: 59px 118px 90px 65px;
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    width: 202px;
+}
+.item .icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 22px;
+}
+.item .heading {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 6px;
+}
+.item .text {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/* Order */
+.order {
+    display: flex;
+    place-items: center;
+    gap: 47px;
+    width: 1164px;
+    height: 491px;
+    margin: 150px 95px 150px 15px;
+}
+.order .info {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    width: 301px;
+    height: 290px;
+    margin: 100.5px 0 100.5px 60px;
+}
+.order .info .title {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 20px;
+}
+.order .info .text {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 120%;
+    text-align: center;
+    color: #1B1925;
+    margin-bottom: 44px;
+}
+.order .info .button {
+    width: 196px;
+    height: 35px;
+    background: #F83718;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.order .info .button:hover {
+    background: #EE816C;
+}
+.order .info .button:active {
+    transform: scale(.9);
+}
+.order .options {
+    display: grid;
+    grid-template-columns: repeat(2, 402px);
+    grid-template-rows: repeat(2, 246px);
+    column-gap: 0;
+    row-gap: 0;
+}
+.order .option {
+    position: relative;
+}
+.order .option .container__front {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    gap: 14px;
+    height: 172px;
+    margin: 39px auto;
+    z-index: 1;
+    position: relative;
+    backface-visibility: hidden;
+    transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.order .option .container__front.smart-tv {
+    width: 183px;
+}
+.order .option .container__front.commerce {
+    width: 222px;
+}
+.order .option .container__front.automation {
+    width: 255px;
+}
+.order .option .container__front.mobile {
+    width: 255px;
+}
+
+.order .option .container__back {
+    width: 402px;
+    height: 246px;
+    background: #F83718;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 120%;
+    text-align: center;
+    color: #FFFFFF;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    backface-visibility: hidden;
+    transform: rotateY(-180deg);
+    transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.order .option .container__back.smart-tv {
+    padding: 51px 28px 44px;
+}
+.order .option .container__back.commerce {
+    padding: 94px 28px 93px;
+}
+.order .option .container__back.automation {
+    padding: 95px 28px;
+}
+.order .option .container__back.mobile {
+    padding: 75px 28px 74px;
+}
+
+.order .option:hover .container__back {
+    transform: rotateY(0deg);
+    z-index: 2;
+    cursor: pointer;
+}
+.order .option:hover .container__front {
+    transform: rotateY(180deg);
+    z-index: -1;
+    cursor: pointer;
+}
+
+.order .option .icon {
+    width: 100px;
+    height: 100px;
+}
+.order .option .heading {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+/* Contacts */
+.contacts {
+    display: flex;
+    place-items: center;
+    width: 1164px;
+    height: 233px;
+    margin: 0 0 60px;
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+    width: 582px;
+    height: 233px;
+}
+.contact .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 391px;
+    height: 140px;
+    margin: 46.5px 133px 46.5px 58px;
+}
+.contact .heading {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+.contact span {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: #FFFFFF;
+    margin-bottom: 14px;
+}
+.contact .email {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+.contact.address {
+    background: #F9F9F9;
+}
+.contact.email {
+    background: #F83718;
+}
+.contact.address .heading {
+    color: #000000;
+}
+.contact.address span {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    color: #000;
+}
+.contact.address .address {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: #000;
+}
+
+/* Legal */
+.legal {
+    width: 565px;
+    height: 60px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+    color: #959595;
+    margin: 0 385px 0 326px;
+}
+
+
+@media screen and (max-width: 1280px) {
+    /* Modules */
+    .modules {
+        display: flex;
+        width: 1280px;
+        margin: 0;
+        overflow: hidden;
+    }
+    .modules .container {
+        width: 1164px;
+        margin: 0 58px;
+    }
+
+    /* Header */
+    .header {
+        width: 1164px;
+    }
+    .header .container {
+        width: 1164px;
+        margin: 24px 0;
+    }
+
+    /* Intro */
+    .intro {
+        width: 1164px;
+    }
+    .intro .container {
+        width: 1164px;
+        margin: 86px 0px 71px 0px;
+    }
+
+    /* Filmtoolz */
+    .filmtoolz {
+        display: flex;
+        flex-direction: column;
+        width: 765px;
+        height: 523px;
+        margin: 0 199.5px 58px;
+    }
+    .filmtoolz .title {
+        width: 538px;
+        margin: 0 auto 30px;
+    }
+    .filmtoolz .text {
+        width: 580px;
+        margin: 0 auto 70px;
+    }
+    /* actuals - general */
+    .actuals.general {
+        margin: 0;
+    }
+
+    /* module - planning */
+    .module.planning {
+        margin: 0 20px 22px 0;
+    }
+    /* module - budget */
+    .module.budget {
+        margin-left: 25px;
+    }
+    /* module - preproduction */
+    .module.preproduction {
+        margin-right: 19px;
+    }
+    /* module - casting-base - wrapper */
+    .module.casting-base .wrapper {
+        margin-left: 0px;
+    }
+    /* module - docs */
+    .module.docs {
+        width: 1218px;
+        margin-right: 0px;
+    }
+    .module.docs .container {
+        width: 978px;
+    }
+
+    /* Items */
+    .items {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 1090px;
+        height: 229px;
+        margin: 58px auto 90px;
+    }
+
+    /* Order */
+    .order {
+        display: flex;
+        place-items: center;
+        gap: 32px;
+        width: 1164px;
+        height: 491px;
+        margin: 150px 0 150px;
+    }
+
+    /* Contacts */
+    .contacts {
+        display: flex;
+        place-items: center;
+        width: 1164px;
+        height: 233px;
+        margin: 0 0 60px;
+    }
+    .contact {
+        display: flex;
+        flex-direction: column;
+        width: 582px;
+        height: 233px;
+    }
+    .contact .container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 46.5px 133px 46.5px 58px;
+    }
+
+    /* Legal */
+    .legal {
+        margin: 0 auto;
+    }
+}  
+
+
+@media screen and (max-width: 1164px) {
+    /* Modules */
+    .modules {
+        display: flex;
+        width: 1164px;
+        margin: 0;
+        overflow: hidden;
+    }
+    .modules .container {
+        width: 1164px;
+        margin: 0;
+    }
+
+    /* Header */
+    .header {
+        width: 1164px;
+    }
+    .header .container {
+        width: 1164px;
+        margin: 24px 0;
+    }
+
+    /* Intro */
+    .intro {
+        width: 1164px;
+    }
+    .intro .container {
+        width: 1164px;
+        margin: 86px 0px 71px 0px;
+    }
+
+    /* Filmtoolz */
+    .filmtoolz {
+        display: flex;
+        flex-direction: column;
+        width: 765px;
+        height: 523px;
+        margin: 0 199.5px 58px;
+    }
+    .filmtoolz .title {
+        width: 538px;
+        margin: 0 auto 30px;
+    }
+    .filmtoolz .text {
+        width: 580px;
+        margin: 0 auto 70px;
+    }
+    /* actuals - general */
+    .actuals.general {
+        margin: 0;
+    }
+
+    /* module - planning */
+    .module.planning {
+        width: 1193px;
+        height: 495px;
+        background-image: url('../img/module-planning-bckg.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 0 20px 22px 0;
+    }
+    /* module - budget */
+    .module.budget {
+        margin-left: 25px;
+    }
+    /* module - preproduction */
+    .module.preproduction {
+        width: 1190px;
+        height: 490px;
+        background-image: url('../img/module-preproduction-bckg.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-right: 19px;
+        margin-bottom: 74px;
+    }
+    /* module - casting-base */
+    .module.casting-base {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        width: 1218px;
+        margin-bottom: 22px;
+    }
+    /* module - casting-base - wrapper */
+    .module.casting-base .wrapper {
+        margin-left: 0px;
+    }
+    .module.casting-base .wrapper img {
+        width: 1037px;
+        height: 481px;
+        margin: 66px 92px 67px 90px;
+    }
+    /* module - docs */
+    .module.docs {
+        width: 1164px;
+        margin-right: 0px;
+    }
+    .module.docs .container {
+        width: 978px;
+    }
+
+    /* Items */
+    .items {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 1090px;
+        height: 229px;
+        margin: 58px auto 90px;
+    }
+
+    /* Order */
+    .order {
+        display: flex;
+        place-items: center;
+        gap: 32px;
+        width: 1164px;
+        height: 491px;
+        margin: 150px 0 150px;
+    }
+
+    /* Contacts */
+    .contacts {
+        display: flex;
+        place-items: center;
+        width: 1164px;
+        height: 233px;
+        margin: 0 0 60px;
+    }
+    .contact {
+        display: flex;
+        flex-direction: column;
+        width: 582px;
+        height: 233px;
+    }
+    .contact .container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 46.5px 133px 46.5px 58px;
+    }
+
+    /* Legal */
+    .legal {
+        margin: 0 auto;
+    }
 }
